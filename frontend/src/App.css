@@ -1,0 +1,202 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c7744);
+  background-size: 400% 400%;
+  animation: backgroundShift 15s ease infinite;
+  font-family: 'Segoe UI', sans-serif;
+  color: #e8f5e9;
+}
+
+@keyframes backgroundShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+a, .nav-link {
+  color: #a5d6a7 !important;
+}
+
+a:hover, .nav-link:hover {
+  color: #66bb6a !important;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(76, 175, 80, 0.3);
+  margin-bottom: 40px;
+}
+
+h4, h5, h3 {
+  color: #a5d6a7;
+}
+
+input, textarea, .form-control {
+  background-color: #1b2d20 !important;
+  border: 1px solid #4caf50 !important;
+  color: #e8f5e9 !important;
+}
+
+button {
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #43a047 !important;
+}
+.weather-widget {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  max-width: 200px;
+}
+/* ===== DARK MODE ===== */
+body.dark-mode {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c7744);
+  background-size: 400% 400%;
+  animation: backgroundShift 15s ease infinite;
+  font-family: 'Segoe UI', sans-serif;
+  color: #e8f5e9;
+}
+
+@keyframes backgroundShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.dark-mode .App-header {
+  color: white;
+}
+
+.dark-mode a, 
+.dark-mode .nav-link {
+  color: #a5d6a7 !important;
+}
+
+.dark-mode a:hover,
+.dark-mode .nav-link:hover {
+  color: #66bb6a !important;
+}
+
+.dark-mode .container {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(76, 175, 80, 0.3);
+  margin-bottom: 40px;
+}
+
+.dark-mode h4, h5, h3 {
+  color: #a5d6a7;
+}
+
+.dark-mode input, textarea, .form-control {
+  background-color: #1b2d20 !important;
+  border: 1px solid #4caf50 !important;
+  color: #e8f5e9 !important;
+}
+
+.dark-mode button:hover {
+  background-color: #43a047 !important;
+}
+
+.dark-mode .weather-widget {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  max-width: 200px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #e8f5e9;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+
+/* ===== LIGHT MODE ===== */
+body.light-mode {
+  background: linear-gradient(135deg, #e8f5e9, #c8e6c9, #a5d6a7);
+  background-size: 400% 400%;
+  animation: backgroundShift 15s ease infinite;
+  color: #1b5e20;
+}
+
+.light-mode .App-header {
+  color: #1b5e20;
+}
+
+.light-mode .container {
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 20px rgba(139, 195, 74, 0.3);
+}
+
+.light-mode h4,
+.light-mode h5,
+.light-mode h3 {
+  color: #2e7d32;
+}
+
+.light-mode input,
+.light-mode textarea,
+.light-mode .form-control {
+  background-color: #f1f8e9 !important;
+  border: 1px solid #a5d6a7 !important;
+  color: #1b5e20 !important;
+}
+
+.light-mode a,
+.light-mode .nav-link {
+  color: #2e7d32 !important;
+}
+
+.light-mode a:hover,
+.light-mode .nav-link:hover {
+  color: #66bb6a !important;
+}
+
+.light-mode button {
+  background-color: #a5d6a7 !important;
+  color: #1b5e20 !important;
+}
+
+.light-mode button:hover {
+  background-color: #81c784 !important;
+}
+
+.light-mode .weather-widget {
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #1b5e20;
+  border: 1px solid #c8e6c9;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.light-mode .chat-card,
+.light-mode .forecast-day,
+.light-mode .card {
+  background-color: #ffffff;
+  color: #1b5e20;
+  border: 1px solid #c8e6c9;
+}
+

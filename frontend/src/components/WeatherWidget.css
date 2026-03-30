@@ -1,0 +1,39 @@
+.weather-widget {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  max-width: 250px;
+  padding: 1rem;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #0f3d2e, #145c42);
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  font-size: 0.9rem;
+  z-index: 999;
+}
+
+.weather-card {
+  text-align: left;
+}
+
+.forecast-container {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+  gap: 8px;
+}
+
+.forecast-day {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 6px;
+  text-align: center;
+  font-size: 0.75rem;
+}
+.weather-map {
+  margin-top: 15px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}

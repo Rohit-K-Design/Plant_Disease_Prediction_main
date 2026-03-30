@@ -1,0 +1,4 @@
+const API_URL = process.env.REACT_APP_BACKEND_URL;
+const WEATHER_API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
+
+export { API_URL, WEATHER_API_KEY };
